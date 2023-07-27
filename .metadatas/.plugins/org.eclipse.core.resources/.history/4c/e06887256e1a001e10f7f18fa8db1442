@@ -1,0 +1,40 @@
+package com.ashu.chatapp.views;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
+import java.awt.Color;
+
+public class DashBoard extends JFrame {
+
+	private JPanel contentPane;
+
+
+	public static void main(String[] args) {
+		
+					DashBoard frame = new DashBoard();
+					frame.setVisible(true);
+				
+	}
+
+	
+	public DashBoard(String mess) {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 738, 453);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(DashBoard.class.getResource("/images/OIP.jpeg")));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		contentPane.add(lblNewLabel);
+	}
+
+}

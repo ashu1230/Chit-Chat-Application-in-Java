@@ -1,0 +1,10 @@
+package com.ashu.chatapp.dto;
+
+public class UserDTO {
+	private String userid;
+	private char[] password;
+	public UserDTO(String userid, String password) {
+		this.userid = userid;
+		this.password = this.password;
+	}
+}

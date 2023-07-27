@@ -1,0 +1,29 @@
+package com.ashu.chatapp.network;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+import com.ashu.chatapp.utils.ConfigReader;
+
+public class Server {
+
+	ServerSocket serverSocket;
+	public Server() throws IOException {
+		int PORT = Integer.parseInt(ConfigReader.getValue("PORTNO"));
+		serverSocket = new ServerSocket(PORT);
+		System.out.println("Server Started and Waiting For the Client Connection");
+		Socket socket = serverSocket.accept(); ///handshaking.
+		System.out.println("Clients join The Server");
+		InputStream in = socket.getInputStream();  //read bytes form network.
+		 in.readAllBytes();		//in java 9 to read all bytes.
+		socket.close();
+	}
+	
+	public static void main(String[] args) throws IOException {
+		Server server = new Server();
+
+	}
+
+}

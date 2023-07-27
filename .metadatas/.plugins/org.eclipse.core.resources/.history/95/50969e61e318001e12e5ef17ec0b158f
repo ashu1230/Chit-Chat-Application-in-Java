@@ -1,0 +1,20 @@
+package com.ashu.chatapp.views;
+
+import java.security.PublicKey;
+
+import javax.swing.JFrame;
+	
+public class UserView extends JFrame{
+	public UserView() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 400);
+		setResizable(false);
+		setTitle("Login");
+//		setLocation(500,200);
+		setLocationRelativeTo(null);
+		setVisible(true);
+	}
+	public static void main(String[] arg) {
+		UserView userView = new UserView();
+	}
+}

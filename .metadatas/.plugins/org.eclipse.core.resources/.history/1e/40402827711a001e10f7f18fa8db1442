@@ -1,0 +1,5 @@
+DRIVER = com.mysql.cj.jdbc.Driver
+CONNECTION_ULR = jdbc:mysql://localhost:3306/chatdb
+USERID = root
+PASSWORD = mysql
+PORTNUMBER = 

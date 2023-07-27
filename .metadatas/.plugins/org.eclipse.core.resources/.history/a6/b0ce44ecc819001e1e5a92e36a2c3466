@@ -1,0 +1,5 @@
+package com.ashu.chatapp.dto;
+
+public class UserDTO {
+	private String 
+}

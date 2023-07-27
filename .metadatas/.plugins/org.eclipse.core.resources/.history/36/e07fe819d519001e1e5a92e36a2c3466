@@ -1,0 +1,24 @@
+package com.ashu.chatapp.utils;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+public interface Encryption {
+	
+	static String passwordEncrypt(String plainpassword) throws NoSuchAlgorithmException {
+		String encryptedpassword = null;
+		MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+		messageDigest.update(plainpassword.getBytes());
+		byte[] encrypt = messageDigest.digest();
+		StringBuffer
+		for(byte b : encrypt) {
+			
+		}
+		System.out.println("Encrypted password "+encryptedpassword);
+		return encryptedpassword;
+	}
+	public static void main(String[] args) throws NoSuchAlgorithmException {
+		System.out.println(passwordEncrypt("ashu"));
+	}
+	
+}

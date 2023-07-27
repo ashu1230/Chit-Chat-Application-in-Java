@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author ashut
+ *
+ */
+module multiuserchat {
+	requires java.desktop;
+}

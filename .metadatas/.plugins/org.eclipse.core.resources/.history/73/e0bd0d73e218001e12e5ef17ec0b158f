@@ -1,0 +1,15 @@
+package com.ashu.chatapp.views;
+
+import java.security.PublicKey;
+
+import javax.swing.JFrame;
+	
+public class UserView extends JFrame{
+	public UserView() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+	public static void main(String[] arg) {
+		UserView userView = new UserView();
+	}
+}

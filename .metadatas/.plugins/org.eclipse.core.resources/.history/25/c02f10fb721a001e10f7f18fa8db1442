@@ -1,0 +1,20 @@
+package com.ashu.chatapp.network;
+
+import java.net.Socket;
+
+import com.ashu.chatapp.utils.ConfigReader;
+
+public class Client {
+	Socket socket;
+	public Client() {
+		int PORT = Integer.parseInt(ConfigReader.getValue("PORTNO"));
+		socket = new Socket(ConfigReader.getValue("SERVER_IP"));
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

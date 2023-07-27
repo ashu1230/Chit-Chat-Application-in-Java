@@ -1,0 +1,9 @@
+package com.ashu.chatapp.dao;
+
+import java.sql.Connection;
+
+public class CommanDao {
+	public Connection createConnection() {
+		
+	}
+}

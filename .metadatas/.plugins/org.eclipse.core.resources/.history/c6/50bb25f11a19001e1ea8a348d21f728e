@@ -1,0 +1,5 @@
+package com.ashu.chatapp.dao;
+
+public class CommanDao {
+
+}
